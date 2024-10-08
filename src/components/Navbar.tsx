@@ -27,7 +27,7 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
+
   return (
     <header className="border-b border-gray-200 w-screen fixed top-0 left-1/2 right-1/2 -mx-[50vw] bg-white">
       <div className="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">

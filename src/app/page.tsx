@@ -1,7 +1,7 @@
-'use client';
-import { useAccount } from 'wagmi';
-import OnchainStore from 'src/components/OnchainStore';
-import Navbar from 'src/components/Navbar';
+"use client";
+import { useAccount } from "wagmi";
+import OnchainStore from "src/components/OnchainStore";
+import Navbar from "src/components/Navbar";
 
 export default function Page() {
   const { address } = useAccount();

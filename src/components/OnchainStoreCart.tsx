@@ -2,7 +2,7 @@ import { useCallback, useMemo } from "react";
 import { useOnchainStoreContext } from "./OnchainStoreProvider";
 import { LifecycleStatus, Pay, PayButton } from "@coinbase/onchainkit/pay";
 
-const PRODUCT_ID = '';
+const PRODUCT_ID = "";
 
 export default function OnchainStoreCart() {
   const { quantities, products } = useOnchainStoreContext();
@@ -32,11 +32,11 @@ export default function OnchainStoreCart() {
               TOTAL {totalSum.toFixed(2)} USDC
             </h2>
             <div className="w-64">
-              <Pay
-                onStatus={handleStatusChange}
-                productId={PRODUCT_ID}
-              >
-                <PayButton text="Pay with Crypto" className="bg-black text-white rounded-none hover:bg-[#000000cf]" />
+              <Pay onStatus={handleStatusChange} productId={PRODUCT_ID}>
+                <PayButton
+                  text="Pay with Crypto"
+                  className="bg-black text-white rounded-none hover:bg-[#000000cf]"
+                />
               </Pay>
             </div>
           </div>
