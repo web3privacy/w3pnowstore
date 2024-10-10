@@ -9,8 +9,6 @@
 
 An Onchain Commerce Template build with [OnchainKit](https://onchainkit.xyz), and ready to be deployed to Vercel.
 
-Play with it live on https://onchain-commerce-template.vercel.app
-
 Have fun! ⛵️
 
 <br />
