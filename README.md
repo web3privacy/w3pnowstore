@@ -27,6 +27,9 @@ NEXT_PUBLIC_CDP_API_KEY="GET_FROM_COINBASE_DEVELOPER_PLATFORM"
 
 # See https://cloud.walletconnect.com
 NEXT_PUBLIC_WC_PROJECT_ID="GET_FROM_WALLET_CONNECT"
+
+# See https://beta.commerce.coinbase.com/
+COINBASE_COMMERCE_API_KEY="GET_FROM_COINBASE_COMMERCE"
 ```
 <br />
 
