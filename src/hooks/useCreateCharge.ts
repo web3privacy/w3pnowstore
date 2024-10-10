@@ -14,16 +14,6 @@ export type ChargeDetails = {
   local_price?: Price;
 };
 
-const testOptions = {
-  name: "test charge",
-  description: "chargesss",
-  pricing_type: "fixed_price",
-  local_price: {
-    amount: ".02",
-    currency: "USD",
-  },
-};
-
 const useCreateCharge = () => {
   const createCharge = useCallback(async (chargeDetails: ChargeDetails) => {
     console.log({ chargeDetails });
