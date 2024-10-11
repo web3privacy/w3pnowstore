@@ -1,4 +1,4 @@
-import { Product } from 'src/types';
+import type { Product } from 'src/types';
 import Image from 'next/image';
 import QuantityInput from './QuantityInput';
 
