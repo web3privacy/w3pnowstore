@@ -1,9 +1,9 @@
 export default function OnchainStoreSummary() {
   return (
-    <div className='mb-8 flex flex-col justify-center border-gray-200 border-r p-8 md:mb-0 md:w-1/3'>
-      <div className='space-y-4 text-left'>
+    <div className="mb-8 flex flex-col justify-center border-gray-200 border-r p-8 md:mb-0 md:w-1/3">
+      <div className="space-y-4 text-left">
         <h2
-          className='font-bold text-3xl leading-tight'
+          className="font-bold text-3xl leading-tight"
           style={{
             fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
             fontWeight: 700,
@@ -12,7 +12,7 @@ export default function OnchainStoreSummary() {
         >
           The future of commerce is less fee. More creativity.
         </h2>
-        <p className='mt-4 text-sm leading-relaxed'>
+        <p className="mt-4 text-sm leading-relaxed">
           Frustration over fees and delays are the top reasons why nearly 9 in
           10 Americans want an updated financial system.
         </p>
