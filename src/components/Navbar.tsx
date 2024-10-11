@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   GITHUB_LINK,
   ONCHAINKIT_LINK,
   TEMPLATE_LINK,
   TWITTER_LINK,
-} from "src/links";
-import OnchainKitShopSvg from "src/svg/OnchainKitShopSvg";
-import { NavbarLinkReact } from "src/types";
+} from 'src/links';
+import OnchainKitShopSvg from 'src/svg/OnchainKitShopSvg';
+import { NavbarLinkReact } from 'src/types';
 
 function NavbarLink({ link, label }: NavbarLinkReact) {
   return (

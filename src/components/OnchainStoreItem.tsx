@@ -1,7 +1,7 @@
-import { Product } from "src/types";
-import jacketImage from "../images/jacket.png";
-import Image from "next/image";
-import QuantityInput from "./QuantityInput";
+import { Product } from 'src/types';
+import jacketImage from '../images/jacket.png';
+import Image from 'next/image';
+import QuantityInput from './QuantityInput';
 
 export default function OnchainStoreItem({ id, name, price, image }: Product) {
   return (

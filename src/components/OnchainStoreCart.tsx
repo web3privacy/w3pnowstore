@@ -1,8 +1,7 @@
-import { useCallback, useMemo } from "react";
-import { useOnchainStoreContext } from "./OnchainStoreProvider";
-import { LifecycleStatus, Pay, PayButton } from "@coinbase/onchainkit/pay";
-import useCreateCharge from "src/hooks/useCreateCharge";
-
+import { useCallback, useMemo } from 'react';
+import { useOnchainStoreContext } from './OnchainStoreProvider';
+import { LifecycleStatus, Pay, PayButton } from '@coinbase/onchainkit/pay';
+import useCreateCharge from 'src/hooks/useCreateCharge';
 
 export default function OnchainStoreCart() {
   const { quantities, products } = useOnchainStoreContext();
@@ -13,13 +12,13 @@ export default function OnchainStoreCart() {
     return (
       products?.reduce(
         (sum, product) => sum + (quantities[product.id] || 0) * product.price,
-        0
+        0,
       ) || 0
     );
   }, [products, quantities]);
 
   const handleStatusChange = useCallback((status: LifecycleStatus) => {
-    console.log("onStatus", status);
+    console.log('onStatus', status);
   }, []);
 
   const chargeHandler = useCallback(() => {
@@ -27,14 +26,14 @@ export default function OnchainStoreCart() {
       .map((productId) => {
         return `${productId}(${quantities[productId]})`;
       })
-      .join(",");
+      .join(',');
     const chargeDetails = {
-      name: "commerce template charge",
+      name: 'commerce template charge',
       description,
-      pricing_type: "fixed_price",
+      pricing_type: 'fixed_price',
       local_price: {
         amount: totalSum.toString(),
-        currency: "USD",
+        currency: 'USD',
       },
     };
     return createCharge(chargeDetails);

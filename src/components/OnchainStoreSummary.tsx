@@ -7,7 +7,7 @@ export default function OnchainStoreSummary() {
           style={{
             fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
             fontWeight: 700,
-            fontStretch: "condensed",
+            fontStretch: 'condensed',
           }}
         >
           The future of commerce is less fee. More creativity.

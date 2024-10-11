@@ -1,12 +1,12 @@
-import { useCallback, useMemo } from "react";
+import { useCallback, useMemo } from 'react';
 import {
   Quantities,
   QuantityInputButtonReact,
   QuantityInputReact,
-} from "src/types";
-import { useOnchainStoreContext } from "./OnchainStoreProvider";
-import PlusSvg from "src/svg/PlusSvg";
-import MinusSvg from "src/svg/MinusSvg";
+} from 'src/types';
+import { useOnchainStoreContext } from './OnchainStoreProvider';
+import PlusSvg from 'src/svg/PlusSvg';
+import MinusSvg from 'src/svg/MinusSvg';
 
 function QuantityInputButton({
   onClick,
