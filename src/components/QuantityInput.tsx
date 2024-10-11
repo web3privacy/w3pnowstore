@@ -1,12 +1,12 @@
-import { useCallback, useMemo } from "react";
-import {
+import { useCallback, useMemo } from 'react';
+import type {
   Quantities,
   QuantityInputButtonReact,
   QuantityInputReact,
-} from "src/types";
-import { useOnchainStoreContext } from "./OnchainStoreProvider";
-import PlusSvg from "src/svg/PlusSvg";
-import MinusSvg from "src/svg/MinusSvg";
+} from 'src/types';
+import { useOnchainStoreContext } from './OnchainStoreProvider';
+import PlusSvg from 'src/svg/PlusSvg';
+import MinusSvg from 'src/svg/MinusSvg';
 
 function QuantityInputButton({
   onClick,
@@ -15,8 +15,9 @@ function QuantityInputButton({
 }: QuantityInputButtonReact) {
   return (
     <button
+      className="flex h-8 w-8 items-center justify-center rounded border border-gray-200 p-0"
       onClick={onClick}
-      className="flex justify-center items-center h-8 w-8 rounded border border-gray-200 p-0"
+      type="button"
     >
       <span className="sr-only">{label}</span>
       {svg}
@@ -35,14 +36,14 @@ export default function QuantityInput({ productId }: QuantityInputReact) {
     setQuantities((prev: Quantities) => {
       return { ...prev, [productId]: currentItemQuantity + 1 };
     });
-  }, [currentItemQuantity, productId]);
+  }, [currentItemQuantity, productId, setQuantities]);
 
   const handleDecrement = useCallback(() => {
     const newQuantity = Math.max(0, currentItemQuantity - 1);
     setQuantities((prev: Quantities) => {
       return { ...prev, [productId]: newQuantity };
     });
-  }, [currentItemQuantity, productId]);
+  }, [currentItemQuantity, productId, setQuantities]);
 
   return (
     <div className="flex items-center space-x-2">
@@ -51,7 +52,7 @@ export default function QuantityInput({ productId }: QuantityInputReact) {
         svg={<MinusSvg />}
         onClick={handleDecrement}
       />
-      <span className="w-8 text-center text-sm font-medium">
+      <span className="w-8 text-center font-medium text-sm">
         {currentItemQuantity}
       </span>
       <QuantityInputButton

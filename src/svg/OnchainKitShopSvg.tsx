@@ -6,7 +6,7 @@ export default function OnchainKitShopSvg() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* SVG path data */}
+      <title>OnchainKitShopSvg</title>
       <path
         d="M155.001 10.7364H151.782V20.0258C151.782 21.9709 152.721 22.2056 155.001 22.0715V24.9556C154.297 25.1232 153.526 25.2239 152.587 25.2239C149.77 25.2239 148.227 23.9495 148.227 20.3276V10.7364H145.746V7.85237H148.227V2.45312H151.782V7.85237H155.001V10.7364Z"
         fill="black"
