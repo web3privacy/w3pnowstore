@@ -2,7 +2,7 @@ import { createContext, useContext, useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
 import type { OnchainStoreContextType } from '../types';
 import jacketImage from '../images/jacket.png';
-import { Product } from 'src/types';
+import type { Product } from 'src/types';
 
 const emptyContext = {} as OnchainStoreContextType;
 
@@ -43,7 +43,7 @@ export function OnchainStoreProvider({ children }: OnchainStoreProviderReact) {
       setQuantities,
       products,
     };
-  }, [quantities, setQuantities]);
+  }, [quantities, setQuantities, products]);
 
   return (
     <OnchainStoreContext.Provider value={value}>

@@ -6,7 +6,7 @@ import {
   TWITTER_LINK,
 } from 'src/links';
 import OnchainKitShopSvg from 'src/svg/OnchainKitShopSvg';
-import { NavbarLinkReact } from 'src/types';
+import type { NavbarLinkReact } from 'src/types';
 
 function NavbarLink({ link, label }: NavbarLinkReact) {
   return (
@@ -22,11 +22,7 @@ function NavbarLink({ link, label }: NavbarLinkReact) {
 }
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const [isMenuOpen, _] = useState(false);
 
   return (
     <header className="border-b border-gray-200 w-screen fixed top-0 left-1/2 right-1/2 -mx-[50vw] bg-white">
@@ -46,9 +42,6 @@ export default function Navbar() {
               <NavbarLink link={TWITTER_LINK} label="X" />
             </ul>
           </nav>
-          {/* <button className="md:hidden" onClick={toggleMenu}>
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button> */}
         </div>
       </div>
       {isMenuOpen && (

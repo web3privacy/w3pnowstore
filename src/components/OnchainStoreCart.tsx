@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { useOnchainStoreContext } from './OnchainStoreProvider';
-import { LifecycleStatus, Pay, PayButton } from '@coinbase/onchainkit/pay';
+import { Pay, PayButton } from '@coinbase/onchainkit/pay';
+import type { LifecycleStatus } from '@coinbase/onchainkit/pay';
 import useCreateCharge from 'src/hooks/useCreateCharge';
 
 export default function OnchainStoreCart() {
@@ -37,7 +38,7 @@ export default function OnchainStoreCart() {
       },
     };
     return createCharge(chargeDetails);
-  }, [quantities, totalSum]);
+  }, [createCharge, quantities, totalSum]);
 
   return (
     <div className="fixed bottom-0 bg-white border-t border-gray-200 w-screen left-1/2 right-1/2 -mx-[50vw]">
@@ -53,7 +54,7 @@ export default function OnchainStoreCart() {
             <div className="w-64">
               <Pay onStatus={handleStatusChange} chargeHandler={chargeHandler}>
                 <PayButton
-                  coinbaseBranded
+                  coinbaseBranded={true}
                   text="Pay with Crypto"
                   disabled={!totalSum}
                 />

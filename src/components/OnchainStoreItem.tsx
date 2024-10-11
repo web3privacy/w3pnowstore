@@ -1,5 +1,4 @@
 import { Product } from 'src/types';
-import jacketImage from '../images/jacket.png';
 import Image from 'next/image';
 import QuantityInput from './QuantityInput';
 

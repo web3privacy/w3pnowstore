@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from 'react';
-import {
+import type {
   Quantities,
   QuantityInputButtonReact,
   QuantityInputReact,
@@ -15,8 +15,9 @@ function QuantityInputButton({
 }: QuantityInputButtonReact) {
   return (
     <button
-      onClick={onClick}
       className="flex justify-center items-center h-8 w-8 rounded border border-gray-200 p-0"
+      onClick={onClick}
+      type="button"
     >
       <span className="sr-only">{label}</span>
       {svg}
@@ -35,14 +36,14 @@ export default function QuantityInput({ productId }: QuantityInputReact) {
     setQuantities((prev: Quantities) => {
       return { ...prev, [productId]: currentItemQuantity + 1 };
     });
-  }, [currentItemQuantity, productId]);
+  }, [currentItemQuantity, productId, setQuantities]);
 
   const handleDecrement = useCallback(() => {
     const newQuantity = Math.max(0, currentItemQuantity - 1);
     setQuantities((prev: Quantities) => {
       return { ...prev, [productId]: newQuantity };
     });
-  }, [currentItemQuantity, productId]);
+  }, [currentItemQuantity, productId, setQuantities]);
 
   return (
     <div className="flex items-center space-x-2">
