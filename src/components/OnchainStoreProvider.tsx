@@ -43,7 +43,7 @@ export function OnchainStoreProvider({ children }: OnchainStoreProviderReact) {
       setQuantities,
       products,
     };
-  }, [quantities, setQuantities, products]);
+  }, [quantities]);
 
   return (
     <OnchainStoreContext.Provider value={value}>
