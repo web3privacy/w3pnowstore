@@ -1,7 +1,7 @@
-import { useCallback } from "react";
-import { COINBASE_COMMERCE_API_KEY } from "src/config";
+import { useCallback } from 'react';
+import { COINBASE_COMMERCE_API_KEY } from 'src/config';
 
-const COMMERCE_API_URL = "https://api.commerce.coinbase.com";
+const COMMERCE_API_URL = 'https://api.commerce.coinbase.com';
 
 type Price = {
   amount: string;
@@ -19,17 +19,17 @@ const useCreateCharge = () => {
     console.log({ chargeDetails });
     try {
       const res = await fetch(`${COMMERCE_API_URL}/charges`, {
-        method: "POST",
+        method: 'POST',
         body: JSON.stringify(chargeDetails),
         headers: {
-          "Content-Type": "application/json",
-          "X-CC-Api-Key": COINBASE_COMMERCE_API_KEY,
+          'Content-Type': 'application/json',
+          'X-CC-Api-Key': COINBASE_COMMERCE_API_KEY,
         },
       });
       const { data } = await res.json();
       return data.id;
     } catch (error) {
-      console.error("Error creating charge:", error);
+      console.error('Error creating charge:', error);
       throw error;
     }
   }, []);

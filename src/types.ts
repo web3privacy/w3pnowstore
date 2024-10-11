@@ -1,5 +1,5 @@
-import { StaticImageData } from "next/image";
-import { ReactNode } from "react";
+import type { StaticImageData } from 'next/image';
+import type { ReactNode } from 'react';
 
 export type NavbarLinkReact = {
   link: string;
@@ -22,7 +22,7 @@ export type QuantityInputReact = {
 export type OnchainStoreContextType = {
   quantities: Quantities;
   setQuantities: (
-    quantities: Quantities | ((prev: Quantities) => Quantities)
+    quantities: Quantities | ((prev: Quantities) => Quantities),
   ) => void;
   products?: Product[];
 };

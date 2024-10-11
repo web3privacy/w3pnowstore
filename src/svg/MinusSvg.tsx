@@ -7,6 +7,7 @@ export default function MinusSvg() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>MinusSvg</title>
       <path
         d="M3 8H13"
         stroke="currentColor"
