@@ -43,11 +43,11 @@ export default function OnchainStoreCart() {
   return (
     <div className="fixed bottom-0 bg-white border-t border-gray-200 w-screen left-1/2 right-1/2 -mx-[50vw]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center py-4">
+        <div className="flex flex-col md:flex-row justify-between items-center py-4">
           <span className="text-xs text-gray-500 mb-2 md:mb-0 md:w-1/3 lg:pl-8">
             Built with OnchainKit
           </span>
-          <div className="w-full md:w-2/3 flex justify-between items-center md:pl-5 xl:pr-0 pr-8">
+          <div className="w-full md:w-2/3 flex flex-col pt-4 md:pt-0 md:flex-row justify-between items-center md:pl-5 xl:pr-0 md:pr-8">
             <h2 className="text-lg md:w-11/12 font-bold ">
               TOTAL {totalSum.toFixed(2)} USDC
             </h2>

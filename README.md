@@ -35,6 +35,8 @@ COINBASE_COMMERCE_API_KEY="GET_FROM_COINBASE_COMMERCE"
 
 ## Locally run
 
+
+
 ```sh
 # Install bun in case you don't have it
 bun curl -fsSL <https://bun.sh/install> | bash
