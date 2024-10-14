@@ -9,8 +9,6 @@
 
 An Onchain Commerce Template build with [OnchainKit](https://onchainkit.xyz), and ready to be deployed to Vercel.
 
-Play with it live on https://onchain-commerce-template.vercel.app
-
 Have fun! ⛵️
 
 <br />
@@ -33,6 +31,8 @@ COINBASE_COMMERCE_API_KEY="GET_FROM_COINBASE_COMMERCE"
 <br />
 
 ## Locally run
+
+
 
 ```sh
 # Install bun in case you don't have it

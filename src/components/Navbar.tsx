@@ -1,28 +1,35 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import {
   GITHUB_LINK,
   ONCHAINKIT_LINK,
   TEMPLATE_LINK,
   TWITTER_LINK,
 } from 'src/links';
+import { ExternalLinkSvg } from 'src/svg/ExternalLinkSvg';
+import { MenuSvg } from 'src/svg/MenuSvg';
 import OnchainKitShopSvg from 'src/svg/OnchainKitShopSvg';
 import type { NavbarLinkReact } from 'src/types';
 
 function NavbarLink({ link, label }: NavbarLinkReact) {
   return (
-    <li>
+    <li className="flex cursor-pointer items-center gap-2">
       <a
         href={link}
         className="flex items-center text-gray-600 text-xs hover:text-gray-900"
       >
         {label}
       </a>
+      <ExternalLinkSvg />
     </li>
   );
 }
 
 export default function Navbar() {
-  const [isMenuOpen, _] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen((prev) => !prev);
+  }, []);
 
   return (
     <header className="-mx-[50vw] fixed top-0 right-1/2 left-1/2 w-screen border-gray-200 border-b bg-white">
@@ -42,6 +49,9 @@ export default function Navbar() {
               <NavbarLink link={TWITTER_LINK} label="X" />
             </ul>
           </nav>
+          <button type="button" className="md:hidden" onClick={toggleMenu}>
+            <MenuSvg />
+          </button>
         </div>
       </div>
       {isMenuOpen && (

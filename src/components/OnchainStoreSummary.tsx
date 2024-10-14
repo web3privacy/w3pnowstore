@@ -1,6 +1,6 @@
 export default function OnchainStoreSummary() {
   return (
-    <div className="mb-8 flex flex-col justify-center border-gray-200 border-r p-8 md:mb-0 md:w-1/3">
+    <div className="mb-8 flex flex-col justify-center border-gray-200 border-r p-8 md:mb-0 md:w-1/3 lg:border-r">
       <div className="space-y-4 text-left">
         <h2
           className="font-bold text-3xl leading-tight"
