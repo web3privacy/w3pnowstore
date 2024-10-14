@@ -1,10 +1,3 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/coinbase/onchainkit/main/site/docs/public/logo/v0-27.png">
-    <img alt="OnchainKit logo vibes" src="https://raw.githubusercontent.com/coinbase/onchainkit/main/site/docs/public/logo/v0-27.png" width="auto">
-  </picture>
-</p>
-
 # Onchain Commerce Template
 
 An Onchain Commerce Template build with [OnchainKit](https://onchainkit.xyz), and ready to be deployed to Vercel.
@@ -19,7 +12,7 @@ To ensure all components work seamlessly, set the following environment variable
 
 You can find the API key on the [Coinbase Developer Portal's OnchainKit page](https://portal.cdp.coinbase.com/products/onchainkit). If you don't have an account, you will need to create one. 
 
-You can find your Coinbase Commerce API key after creating an account on [Coinbase Commerce](https://beta.commerce.coinbase.com/).
+You can find your Coinbase Commerce API key after creating an account on [Coinbase Commerce](https://beta.commerce.coinbase.com/). If you don't have an account, you will need to create one. 
 
 ```sh
 # See https://portal.cdp.coinbase.com/products/onchainkit
