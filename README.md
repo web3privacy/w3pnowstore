@@ -21,14 +21,14 @@ To ensure all components work seamlessly, set the following environment variable
 
 You can find the API key on the [Coinbase Developer Portal's OnchainKit page](https://portal.cdp.coinbase.com/products/onchainkit). If you don't have an account, you will need to create one. 
 
-You can find your Wallet Connector project ID at [Wallet Connect](https://cloud.walletconnect.com).
+You can find your Coinbase Commerce API key after creating an account on [Coinbase Commerce](https://beta.commerce.coinbase.com/).
 
 ```sh
 # See https://portal.cdp.coinbase.com/products/onchainkit
 NEXT_PUBLIC_CDP_API_KEY="GET_FROM_COINBASE_DEVELOPER_PLATFORM"
 
-# See https://cloud.walletconnect.com
-NEXT_PUBLIC_WC_PROJECT_ID="GET_FROM_WALLET_CONNECT"
+# See https://beta.commerce.coinbase.com/
+COINBASE_COMMERCE_API_KEY="GET_FROM_COINBASE_COMMERCE"
 ```
 <br />
 
