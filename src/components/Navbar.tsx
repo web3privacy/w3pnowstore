@@ -12,7 +12,7 @@ import type { NavbarLinkReact } from 'src/types';
 
 function NavbarLink({ link, label }: NavbarLinkReact) {
   return (
-    <li className="flex items-center gap-2 cursor-pointer">
+    <li className="flex cursor-pointer items-center gap-2">
       <a
         href={link}
         className="flex items-center text-gray-600 text-xs hover:text-gray-900"
@@ -49,7 +49,7 @@ export default function Navbar() {
               <NavbarLink link={TWITTER_LINK} label="X" />
             </ul>
           </nav>
-          <button className="md:hidden" onClick={toggleMenu}>
+          <button type="button" className="md:hidden" onClick={toggleMenu}>
             <MenuSvg />
           </button>
         </div>
