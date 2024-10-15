@@ -33,12 +33,14 @@ export default function OnchainStoreCart() {
       description,
       pricing_type: 'fixed_price',
       local_price: {
-        amount: totalSum.toString(),
+        // NOTE: set to 0 for simulation purposes,
+        // replace with totalSum.toString() in real app
+        amount: '0',
         currency: 'USD',
       },
     };
     return createCharge(chargeDetails);
-  }, [createCharge, quantities, totalSum]);
+  }, [createCharge, quantities]);
 
   return (
     <div className="-mx-[50vw] fixed right-1/2 bottom-0 left-1/2 w-screen border-gray-200 border-t bg-white">
@@ -56,7 +58,8 @@ export default function OnchainStoreCart() {
                 <PayButton
                   coinbaseBranded={true}
                   text="Pay with Crypto"
-                  disabled={!totalSum}
+                  // NOTE: comment back in to disable 0 amount in real app
+                  // disabled={!totalSum}
                 />
               </Pay>
             </div>

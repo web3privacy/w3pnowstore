@@ -1,7 +1,6 @@
 import { useCallback } from 'react';
 import { COINBASE_COMMERCE_API_KEY } from 'src/config';
-
-const COMMERCE_API_URL = 'https://api.commerce.coinbase.com';
+import { COMMERCE_API_URL } from 'src/links';
 
 type Price = {
   amount: string;
@@ -16,7 +15,6 @@ export type ChargeDetails = {
 
 const useCreateCharge = () => {
   const createCharge = useCallback(async (chargeDetails: ChargeDetails) => {
-    console.log({ chargeDetails });
     try {
       const res = await fetch(`${COMMERCE_API_URL}/charges`, {
         method: 'POST',
