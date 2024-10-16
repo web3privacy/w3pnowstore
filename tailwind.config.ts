@@ -6,6 +6,7 @@ const config: Config = {
     container: {
       center: true,
       screens: {
+        xs: '510px',
         sm: '640px',
         md: '768px',
         lg: '1024px',
@@ -62,6 +63,7 @@ const config: Config = {
       },
       fontFamily: {
         mono: ['IBM Plex Mono', 'monospace'],
+        sansMono: ['Noto Sans Mono', 'monospace'],
       },
     },
   },
