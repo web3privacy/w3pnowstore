@@ -55,7 +55,7 @@ export default function Navbar() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden bg-white">
           <ul className="space-y-2 px-4 py-2">
             <NavbarLink link={TEMPLATE_LINK} label="FORK THIS TEMPLATE" />
             <NavbarLink link={ONCHAINKIT_LINK} label="ONCHAINKIT" />
