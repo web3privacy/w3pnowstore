@@ -1,3 +1,4 @@
+import { Banner } from './Banner';
 import Navbar from './Navbar';
 import OnchainStoreCart from './OnchainStoreCart';
 import OnchainStoreItems from './OnchainStoreItems';
@@ -7,9 +8,10 @@ import OnchainStoreSummary from './OnchainStoreSummary';
 export default function OnchainStore() {
   return (
     <OnchainStoreProvider>
-      <div className="flex h-full max-h-screen max-w-full flex-col px-1">
+      <div className="flex h-full max-h-screen max-w-full flex-col px-1 font-sansMono">
+        <Banner />
         <Navbar />
-        <main className="mx-auto flex max-w-7xl grow flex-col py-10">
+        <main className="mx-auto flex max-w-7xl grow flex-col pt-24 pb-10">
           <div className="flex grow flex-col pb-10 md:flex-row">
             <OnchainStoreSummary />
             <OnchainStoreItems />

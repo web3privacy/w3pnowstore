@@ -32,7 +32,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="-mx-[50vw] fixed top-0 right-1/2 left-1/2 w-screen border-gray-200 border-b bg-white">
+    <header className="-mx-[50vw] fixed top-14 xs:top-12 right-1/2 left-1/2 h-11 w-screen border-gray-200 border-b bg-white">
       <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
@@ -55,7 +55,7 @@ export default function Navbar() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden">
+        <div className="bg-white md:hidden">
           <ul className="space-y-2 px-4 py-2">
             <NavbarLink link={TEMPLATE_LINK} label="FORK THIS TEMPLATE" />
             <NavbarLink link={ONCHAINKIT_LINK} label="ONCHAINKIT" />
