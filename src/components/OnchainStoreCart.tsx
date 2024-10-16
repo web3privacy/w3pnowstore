@@ -43,7 +43,7 @@ export default function OnchainStoreCart() {
   }, [createCharge, quantities]);
 
   return (
-    <div className="-mx-[50vw] fixed right-1/2 bottom-0 left-1/2 w-screen border-gray-200 border-t bg-white">
+    <div className="-mx-[50vw] fixed right-1/2 bottom-0 left-1/2 w-screen border-gray-200 border-t bg-[white]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
         <div className="flex flex-col items-start justify-between py-4 md:flex-row md:items-center">
           <span className="mb-2 text-gray-500 text-xs md:mb-0 md:w-1/3 lg:pl-8">
