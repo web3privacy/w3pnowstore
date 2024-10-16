@@ -32,7 +32,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="-mx-[50vw] fixed top-14 xs:top-12 right-1/2 left-1/2 w-screen border-gray-200 border-b bg-white h-11">
+    <header className='-mx-[50vw] fixed top-14 xs:top-12 right-1/2 left-1/2 h-11 w-screen border-gray-200 border-b bg-white'>
       <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
