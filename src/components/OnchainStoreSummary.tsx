@@ -1,6 +1,9 @@
+import { GITHUB_LINK, ONCHAINKIT_LINK } from 'src/links';
+import { ExternalLinkSvg } from 'src/svg/ExternalLinkSvg';
+
 export default function OnchainStoreSummary() {
   return (
-    <div className="flex flex-col justify-center border-gray-200 border-b p-4 py-10 md:w-1/3 md:border-r md:border-b-0 md:py-4 lg:border-r lg:p-8">
+    <div className="flex flex-col justify-center border-gray-200 border-b p-4 py-8 md:w-1/3 md:border-r md:border-b-0 md:py-4 lg:border-r lg:p-8 pb-22 lg:pb-22">
       <div className="space-y-4 text-left">
         <h2
           className="font-bold text-3xl leading-tight"
@@ -24,6 +27,29 @@ export default function OnchainStoreSummary() {
         <p className="text-sm leading-relaxed">
           We're updating the system so it's cheaper and faster.
         </p>
+        <p className="text-sm leading-relaxed font-bold pt-2">
+          BUILD YOUR ONCHAIN STORE
+        </p>
+        <a
+          href={GITHUB_LINK}
+          className="flex items-center cursor-pointer"
+          target="_blank"
+        >
+          <p className="text-sm leading-relaxed">FORK THIS TEMPLATE</p>
+          <span className="pl-1">
+            <ExternalLinkSvg />
+          </span>
+        </a>
+        <a
+          href={ONCHAINKIT_LINK}
+          className="flex items-center cursor-pointer"
+          target="_blank"
+        >
+          <p className="text-sm leading-relaxed">VIEW DOCS</p>
+          <span className="pl-1">
+            <ExternalLinkSvg />
+          </span>
+        </a>
       </div>
     </div>
   );
