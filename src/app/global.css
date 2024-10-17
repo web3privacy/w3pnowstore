@@ -59,8 +59,3 @@ ul {
 a {
   text-decoration: none;
 }
-
-.store-item:nth-child(1),
-.store-item:nth-child(2) {
-  border-bottom: 1px solid #e5e7eb;
-}
