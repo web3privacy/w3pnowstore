@@ -15,7 +15,7 @@ function NavbarLink({ link, label }: NavbarLinkReact) {
   return (
     <li
       className={cn(
-        'flex cursor-pointer items-center justify-center gap-2 p-1 rounded',
+        'flex cursor-pointer items-center justify-center gap-2 rounded p-1',
         pressable.default,
       )}
     >
