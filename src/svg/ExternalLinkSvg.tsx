@@ -1,14 +1,21 @@
 export function ExternalLinkSvg() {
   return (
     <svg
+      width="12"
+      height="12"
+      viewBox="0 0 20 20"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      className="pb-1 md:pb-0"
     >
       <title>ExternalLinkSvg</title>
-      <path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z" />
+      <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="black" />
+      <path
+        d="M6 14L14 6M14 6H8M14 6V12"
+        stroke="black"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 }

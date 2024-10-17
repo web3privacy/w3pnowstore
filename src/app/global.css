@@ -5,8 +5,8 @@
 
 :root {
   /* Palette */
-  --palette-bg-black: #fff;
-  --palette-bg-white: rgb(21, 26, 38);
+  /* --palette-bg-black: #fff;
+  --palette-bg-white: rgb(21, 26, 38); */
 
   /* Indicates that the element can be rendered using 
    * the operating system dark color scheme. 
@@ -36,8 +36,6 @@ html .font-inter {
 body {
   height: 100%;
   margin: 0;
-  background-color: var(--palette-bg-black);
-  color: var(--palette-bg-white);
   font-family: Inter, sans-serif;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -46,11 +44,6 @@ body {
 
 a {
   text-decoration: underline;
-}
-
-svg {
-  display: block;
-  overflow: visible;
 }
 
 ul {

@@ -1,3 +1,4 @@
+import { cn, pressable } from '@coinbase/onchainkit/theme';
 import { useCallback, useState } from 'react';
 import {
   GITHUB_LINK,
@@ -12,14 +13,18 @@ import type { NavbarLinkReact } from 'src/types';
 
 function NavbarLink({ link, label }: NavbarLinkReact) {
   return (
-    <li className="flex cursor-pointer items-center gap-2">
+    <li className="flex cursor-pointer items-center justify-center gap-2">
       <a
         href={link}
-        className="flex items-center text-gray-600 text-xs hover:text-gray-900"
+        className="ock-text-foreground flex items-center text-xs"
+        target="_blank"
+        rel="noreferrer"
       >
         {label}
+        <span className="pl-1">
+          <ExternalLinkSvg />
+        </span>
       </a>
-      <ExternalLinkSvg />
     </li>
   );
 }
@@ -32,12 +37,12 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="-mx-[50vw] fixed top-14 xs:top-12 right-1/2 left-1/2 h-11 w-screen border-gray-200 border-b bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
+    <header className="-mx-[50vw] fixed top-14 xs:top-12 right-1/2 left-1/2 h-11 w-screen border-gray-200 border-b bg-[white]">
+      <div className="mx-auto max-w-5xl px-4 py-3 lg:px-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <OnchainKitShopSvg />
-            <span className="rounded-sm bg-gray-100 px-2 py-0.5 font-regular text-gray-700 text-xs">
+            <span className="ock-bg-alternate ock-text-foreground rounded-sm px-2 py-0.5 font-regular text-xs">
               Template
             </span>
           </div>
@@ -49,14 +54,18 @@ export default function Navbar() {
               <NavbarLink link={TWITTER_LINK} label="X" />
             </ul>
           </nav>
-          <button type="button" className="md:hidden" onClick={toggleMenu}>
+          <button
+            type="button"
+            className={cn('md:hidden', pressable.default)}
+            onClick={toggleMenu}
+          >
             <MenuSvg />
           </button>
         </div>
       </div>
       {isMenuOpen && (
-        <div className="bg-white md:hidden">
-          <ul className="space-y-2 px-4 py-2">
+        <div className="bg-[white] md:hidden">
+          <ul className="flex flex-col items-start space-y-2 px-4 py-2">
             <NavbarLink link={TEMPLATE_LINK} label="FORK THIS TEMPLATE" />
             <NavbarLink link={ONCHAINKIT_LINK} label="ONCHAINKIT" />
             <NavbarLink link={GITHUB_LINK} label="GITHUB" />
