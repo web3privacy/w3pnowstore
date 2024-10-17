@@ -45,11 +45,11 @@ export default function OnchainStoreCart() {
   return (
     <div className="-mx-[50vw] fixed right-1/2 bottom-0 left-1/2 w-screen border-gray-200 border-t bg-[white]">
       <div className="mx-auto max-w-5xl ">
-        <div className="flex flex-col items-start justify-between px-4 py-4 md:flex-row md:items-center lg:px-8 lg:pr-0">
-          <span className="mb-2 hidden text-xs sm:flex md:mb-0 md:w-1/3">
+        <div className="flex flex-col items-start justify-between py-4 md:flex-row md:items-center">
+          <span className="mb-2 hidden px-4 text-xs sm:flex md:mb-0 md:w-1/3 lg:px-8">
             Built with OnchainKit
           </span>
-          <div className="flex w-full items-center justify-between md:w-2/3 ">
+          <div className="flex w-full grow flex-col items-center justify-between gap-2 px-4 sm:flex-row sm:gap-0 md:w-auto lg:px-6">
             <h2 className="font-bold text-lg md:w-11/12 ">
               TOTAL {totalSum.toFixed(2)} USDC
             </h2>

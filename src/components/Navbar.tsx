@@ -42,9 +42,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="-mx-[50vw] fixed top-14 xs:top-12 right-1/2 left-1/2 h-11 w-screen border-gray-200 border-b bg-[white]">
-      <div className="mx-auto max-w-5xl px-3 py-2 lg:px-5">
-        <div className="flex items-center justify-between">
+    <header className="-mx-[50vw] fixed top-11 right-1/2 left-1/2 h-11 w-screen border-gray-200 border-b bg-[white]">
+      <div className="mx-auto flex h-full max-w-5xl items-center px-4 py-2 lg:px-6">
+        <div className="flex w-full items-center justify-between">
           <div className="flex items-center space-x-3">
             <OnchainKitShopSvg />
             <span className="ock-bg-alternate ock-text-foreground rounded-sm px-2 py-0.5 font-regular text-xs">
@@ -55,7 +55,6 @@ export default function Navbar() {
             <ul className="flex space-x-6">
               <NavbarLink link={TEMPLATE_LINK} label="FORK THIS TEMPLATE" />
               <NavbarLink link={ONCHAINKIT_LINK} label="ONCHAINKIT" />
-              <NavbarLink link={GITHUB_LINK} label="GITHUB" />
               <NavbarLink link={TWITTER_LINK} label="X" />
             </ul>
           </nav>
