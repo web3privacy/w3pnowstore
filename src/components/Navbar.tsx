@@ -13,7 +13,12 @@ import type { NavbarLinkReact } from 'src/types';
 
 function NavbarLink({ link, label }: NavbarLinkReact) {
   return (
-    <li className="flex cursor-pointer items-center justify-center gap-2">
+    <li
+      className={cn(
+        'flex cursor-pointer items-center justify-center gap-2 p-1 rounded',
+        pressable.default,
+      )}
+    >
       <a
         href={link}
         className="ock-text-foreground flex items-center text-xs"
@@ -38,7 +43,7 @@ export default function Navbar() {
 
   return (
     <header className="-mx-[50vw] fixed top-14 xs:top-12 right-1/2 left-1/2 h-11 w-screen border-gray-200 border-b bg-[white]">
-      <div className="mx-auto max-w-5xl px-4 py-3 lg:px-6">
+      <div className="mx-auto max-w-5xl px-3 py-2 lg:px-5">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <OnchainKitShopSvg />
