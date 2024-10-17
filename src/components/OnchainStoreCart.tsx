@@ -44,12 +44,12 @@ export default function OnchainStoreCart() {
 
   return (
     <div className="-mx-[50vw] fixed right-1/2 bottom-0 left-1/2 w-screen border-gray-200 border-t bg-[white]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
-        <div className="flex flex-col items-start justify-between py-4 md:flex-row md:items-center">
-          <span className="mb-2 text-gray-500 text-xs md:mb-0 md:w-1/3 lg:pl-8">
+      <div className="mx-auto max-w-5xl ">
+        <div className="flex flex-col items-start justify-between px-4 py-4 md:flex-row md:items-center lg:px-8 lg:pr-0">
+          <span className="mb-2 hidden text-xs sm:flex md:mb-0 md:w-1/3">
             Built with OnchainKit
           </span>
-          <div className="flex w-full items-center justify-between pr-8 md:w-2/3 md:pl-5 xl:pr-0">
+          <div className="flex w-full items-center justify-between md:w-2/3 ">
             <h2 className="font-bold text-lg md:w-11/12 ">
               TOTAL {totalSum.toFixed(2)} USDC
             </h2>
@@ -58,6 +58,7 @@ export default function OnchainStoreCart() {
                 <PayButton
                   coinbaseBranded={true}
                   text="Pay with Crypto"
+                  className="mt-0"
                   // NOTE: comment back in to disable $0 amount in real app
                   // disabled={!totalSum}
                 />
