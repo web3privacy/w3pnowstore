@@ -8,13 +8,13 @@ export default function OnchainStoreItem({ id, name, price, image }: Product) {
       <div className="mb-1 flex items-start justify-between">
         <h2 className="font-regular text-xs">{name}</h2>
       </div>
-      <Image
-        src={image}
-        alt="123"
-        width={230}
-        height={230}
-        className="mx-auto"
-      />
+      <div className="flex grow justify-center md:relative">
+        <Image
+          src={image}
+          alt="123"
+          className="mx-auto object-contain max-sm:max-w-[300px] md:absolute md:h-full md:w-auto"
+        />
+      </div>
       <div className="flex items-center justify-between">
         <p className="font-regular text-xs">{price.toFixed(2)} USDC</p>
         <QuantityInput productId={id} />
