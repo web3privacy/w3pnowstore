@@ -11,8 +11,8 @@ export default function OnchainStoreItem({ id, name, price, image }: Product) {
       <Image
         src={image}
         alt="123"
-        width={280}
-        height={280}
+        width={230}
+        height={230}
         className="mx-auto"
       />
       <div className="flex items-center justify-between">
