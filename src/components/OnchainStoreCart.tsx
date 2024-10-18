@@ -46,7 +46,7 @@ export default function OnchainStoreCart() {
     <div className="-mx-[50vw] fixed right-1/2 bottom-0 left-1/2 w-screen border-gray-200 border-t bg-[white]">
       <div className="mx-auto max-w-5xl ">
         <div className="flex flex-col items-start justify-between py-4 md:flex-row md:items-center">
-          <span className="mb-2 hidden px-4 text-xs sm:flex md:mb-0 md:w-1/3 lg:px-8">
+          <span className="mb-2 hidden px-4 text-xs sm:flex md:mb-0 md:w-1/3 lg:px-6">
             Built with OnchainKit
           </span>
           <div className="flex w-full grow flex-col items-center justify-between gap-2 px-4 sm:flex-row sm:gap-0 md:w-auto lg:px-6">
