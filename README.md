@@ -16,7 +16,7 @@ You can find your Coinbase Commerce API key after creating an account on [Coinba
 
 ```sh
 # See https://portal.cdp.coinbase.com/products/onchainkit
-NEXT_PUBLIC_CDP_API_KEY="GET_FROM_COINBASE_DEVELOPER_PLATFORM"
+NEXT_PUBLIC_ONCHAINKIT_API_KEY="GET_FROM_COINBASE_DEVELOPER_PLATFORM"
 
 # See https://beta.commerce.coinbase.com/
 NEXT_PUBLIC_COINBASE_COMMERCE_API_KEY="GET_FROM_COINBASE_COMMERCE"
