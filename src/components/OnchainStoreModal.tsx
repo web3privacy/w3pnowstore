@@ -9,7 +9,7 @@ export default function OnchainStoreModal({
 }: OnchainStoreModalReact) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="relative z-10 flex max-w-lg flex-col gap-2 rounded-[10px] bg-[white] p-6 px-10">
+      <div className="relative z-10 flex max-w-lg flex-col gap-2 xs:rounded-[10px] bg-[white] p-6 px-10 h-full xs:h-auto">
         <button
           type="button"
           className="absolute top-2 right-4"
