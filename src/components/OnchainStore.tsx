@@ -11,7 +11,7 @@ export default function OnchainStore() {
 
   return (
     <OnchainStoreProvider>
-      <div className="flex h-full max-h-screen max-w-full flex-col font-sansMono relative">
+      <div className="relative flex h-full max-h-screen max-w-full flex-col font-sansMono">
         <Banner />
         <Navbar />
         <main className="mx-auto flex max-w-5xl grow flex-col pt-[5.5rem] pb-10">

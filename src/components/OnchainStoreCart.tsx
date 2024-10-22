@@ -6,7 +6,7 @@ import { useOnchainStoreContext } from './OnchainStoreProvider';
 //   CheckoutButton,
 //   LifecycleStatus,
 // } from '@coinbase/onchainkit/checkout';
-import { OnchainStoreCartReact } from 'src/types';
+import type { OnchainStoreCartReact } from 'src/types';
 import OnchainStoreModal from './OnchainStoreModal';
 import { MockCheckoutButton } from './MockCheckoutButton';
 
@@ -58,11 +58,11 @@ export default function OnchainStoreCart({
 
   const closeModal = useCallback(() => {
     setShowModal?.(false);
-  }, []);
+  }, [setShowModal]);
 
   const openModal = useCallback(() => {
     setShowModal?.(true);
-  }, []);
+  }, [setShowModal]);
 
   return (
     <div className="-mx-[50vw] fixed right-1/2 bottom-0 left-1/2 w-screen border-gray-200 border-t bg-[white]">

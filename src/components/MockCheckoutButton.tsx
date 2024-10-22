@@ -1,5 +1,5 @@
 import { CoinbasePaySvg } from 'src/svg/CoinbasePaySvg';
-import { MockCheckoutButtonReact } from 'src/types';
+import type { MockCheckoutButtonReact } from 'src/types';
 
 export function MockCheckoutButton({ onClick }: MockCheckoutButtonReact) {
   return (
@@ -8,14 +8,14 @@ export function MockCheckoutButton({ onClick }: MockCheckoutButtonReact) {
         <button
           type="button"
           onClick={onClick}
-          className="cursor-pointer bg-[#0052FF] active:ock-bg-secondary-active hover:bg-[#0045D8] ock-border-radius ock-font-family font-semibold leading-normal w-full px-4 py-3 flex items-center justify-center"
+          className="active:ock-bg-secondary-active ock-border-radius ock-font-family flex w-full cursor-pointer items-center justify-center bg-[#0052FF] px-4 py-3 font-semibold leading-normal hover:bg-[#0045D8]"
         >
           <div className="flex items-center justify-center whitespace-nowrap">
             <div className="mr-2 flex h-5 w-5 shrink-0 items-center justify-center">
               <CoinbasePaySvg />
             </div>
           </div>
-          <span className="ock-font-family font-semibold leading-normal text-gray-50">
+          <span className="ock-font-family font-semibold text-gray-50 leading-normal">
             Pay with Crypto
           </span>
         </button>
