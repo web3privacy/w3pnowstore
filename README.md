@@ -1,8 +1,8 @@
 # Onchain Commerce Template
+![Thumbnail](https://github.com/user-attachments/assets/4d2232e4-865f-40d7-ac85-a9c8329cd27d)
+
 
 An Onchain Commerce Template build with [OnchainKit](https://onchainkit.xyz), and ready to be deployed to Vercel.
-
-Have fun! ⛵️
 
 <br />
 
