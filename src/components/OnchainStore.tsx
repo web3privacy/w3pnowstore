@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Banner } from './Banner';
 import Navbar from './Navbar';
 import OnchainStoreCart from './OnchainStoreCart';
@@ -6,9 +7,11 @@ import { OnchainStoreProvider } from './OnchainStoreProvider';
 import OnchainStoreSummary from './OnchainStoreSummary';
 
 export default function OnchainStore() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <OnchainStoreProvider>
-      <div className="flex h-full max-h-screen max-w-full flex-col font-sansMono">
+      <div className="relative flex h-full max-h-screen max-w-full flex-col font-sansMono">
         <Banner />
         <Navbar />
         <main className="mx-auto flex max-w-5xl grow flex-col pt-[5.5rem] pb-10">
@@ -16,7 +19,7 @@ export default function OnchainStore() {
             <OnchainStoreSummary />
             <OnchainStoreItems />
           </div>
-          <OnchainStoreCart />
+          <OnchainStoreCart showModal={showModal} setShowModal={setShowModal} />
         </main>
       </div>
     </OnchainStoreProvider>

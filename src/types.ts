@@ -32,3 +32,16 @@ export type QuantityInputButtonReact = {
   svg: ReactNode;
   label: string;
 };
+
+export type OnchainStoreCartReact = {
+  setShowModal?: (value: boolean) => void;
+  showModal?: boolean;
+};
+
+export type OnchainStoreModalReact = {
+  closeModal: () => void;
+};
+
+export type MockCheckoutButtonReact = {
+  onClick: () => void;
+};
