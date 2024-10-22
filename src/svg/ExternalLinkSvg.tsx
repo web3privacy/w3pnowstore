@@ -12,9 +12,9 @@ export function ExternalLinkSvg() {
       <path
         d="M6 14L14 6M14 6H8M14 6V12"
         stroke="black"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
