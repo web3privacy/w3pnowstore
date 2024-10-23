@@ -16,8 +16,6 @@ export default function OnchainStoreCart({
 }: OnchainStoreCartReact) {
   const { quantities, products } = useOnchainStoreContext();
 
-  // const { createCharge } = useCreateCharge();
-
   const totalSum = useMemo(() => {
     return (
       products?.reduce(
@@ -26,6 +24,10 @@ export default function OnchainStoreCart({
       ) || 0
     );
   }, [products, quantities]);
+
+  // TODO: comment back in to enable checkout flow
+
+  // const { createCharge } = useCreateCharge();
 
   // const handleStatusChange = useCallback((status: LifecycleStatus) => {
   //   console.log('onStatus', status);
@@ -77,7 +79,7 @@ export default function OnchainStoreCart({
               TOTAL {totalSum.toFixed(2)} USDC
             </h2>
             <div className="w-64">
-              {/* TODO: comment back in Checkout component in live environment */}
+              {/* TODO: comment back in to enable checkout flow */}
               {/* <Checkout
                 key={key}
                 onStatus={handleStatusChange}
