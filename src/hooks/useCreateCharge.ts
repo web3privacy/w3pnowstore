@@ -15,6 +15,18 @@ export type ChargeDetails = {
 
 const useCreateCharge = () => {
   const createCharge = useCallback(async (chargeDetails: ChargeDetails) => {
+    console.log('=== CreateCharge Debug ===');
+    console.log({
+      hasCommerceKey: !!COINBASE_COMMERCE_API_KEY,
+      commerceKeyLength: COINBASE_COMMERCE_API_KEY?.length,
+      chargeDetails,
+    });
+
+    if (!COINBASE_COMMERCE_API_KEY) {
+      console.error('Commerce API Key is missing or empty');
+      throw new Error('Missing Coinbase Commerce API key');
+    }
+
     try {
       const res = await fetch(`${COMMERCE_API_URL}/charges`, {
         method: 'POST',
@@ -24,10 +36,21 @@ const useCreateCharge = () => {
           'X-CC-Api-Key': COINBASE_COMMERCE_API_KEY,
         },
       });
+      
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error('API Error:', {
+          status: res.status,
+          statusText: res.statusText,
+          errorText,
+        });
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      
       const { data } = await res.json();
       return data.id;
     } catch (error) {
-      console.error('Error creating charge:', error);
+      console.error('Detailed error in createCharge:', error);
       throw error;
     }
   }, []);
