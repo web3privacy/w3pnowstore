@@ -32,7 +32,7 @@ const useCreateCharge = () => {
       const { id } = await res.json();
       return id;
     } catch (error) {
-      console.error('Error in createCharge:', error);
+      console.error('Error creating charge:', error);
       throw error;
     }
   }, []);
