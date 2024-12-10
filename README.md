@@ -20,7 +20,7 @@ You can find your Coinbase Commerce API key on [Coinbase Commerce](https://beta.
 
 ```sh
 # See https://portal.cdp.coinbase.com/products/onchainkit
-NEXT_PUBLIC_ONCHAINKIT_API_KEY="GET_FROM_COINBASE_DEVELOPER_PLATFORM"
+NEXT_PRIVATE_ONCHAINKIT_API_KEYY="GET_FROM_COINBASE_DEVELOPER_PLATFORM"
 
 # See https://beta.commerce.coinbase.com/
 NEXT_PUBLIC_COINBASE_COMMERCE_API_KEY="GET_FROM_COINBASE_COMMERCE"
