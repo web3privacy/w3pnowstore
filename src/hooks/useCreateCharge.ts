@@ -1,6 +1,4 @@
 import { useCallback } from 'react';
-import { COINBASE_COMMERCE_API_KEY } from 'src/config';
-import { COMMERCE_API_URL } from 'src/links';
 
 type Price = {
   amount: string;
