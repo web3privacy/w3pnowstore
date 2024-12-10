@@ -7,13 +7,13 @@ export async function POST(request: Request) {
   if (!COINBASE_COMMERCE_API_KEY) {
     return NextResponse.json(
       { error: 'Missing Coinbase Commerce API key' },
-      { status: 500 }
+      { status: 500 },
     );
   }
 
   try {
     const chargeDetails: ChargeDetails = await request.json();
-    
+
     const res = await fetch(`${COMMERCE_API_URL}/charges`, {
       method: 'POST',
       body: JSON.stringify(chargeDetails),
@@ -32,7 +32,7 @@ export async function POST(request: Request) {
       });
       return NextResponse.json(
         { error: `HTTP error! status: ${res.status}` },
-        { status: res.status }
+        { status: res.status },
       );
     }
 
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
     console.error('Error creating charge:', error);
     return NextResponse.json(
       { error: 'Failed to create charge' },
-      { status: 500 }
+      { status: 500 },
     );
   }
-} 
+}

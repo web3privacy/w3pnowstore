@@ -21,12 +21,12 @@ const useCreateCharge = () => {
           'Content-Type': 'application/json',
         },
       });
-      
+
       if (!res.ok) {
         const error = await res.json();
         throw new Error(error.error || 'Failed to create charge');
       }
-      
+
       const { id } = await res.json();
       return id;
     } catch (error) {
