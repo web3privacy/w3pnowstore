@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import CommerceScreenImage from '../images/commerceScreen.png';
-import type { OnchainStoreModalReact } from 'src/types';
 import { GITHUB_LINK } from 'src/links';
 import { CloseSvg } from 'src/svg/CloseSvg';
+import type { OnchainStoreModalReact } from 'src/types';
+import CommerceScreenImage from '../images/commerceScreen.png';
 
 export default function OnchainStoreModal({
   closeModal,

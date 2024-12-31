@@ -1,11 +1,11 @@
 import { createContext, useContext, useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
-import type { OnchainStoreContextType } from '../types';
-import jacketImage from '../images/jacket.png';
-import airpodsImage from '../images/airpods.png';
-import mugImage from '../images/mug.png';
-import bottleImage from '../images/bottle.png';
 import type { Product } from 'src/types';
+import airpodsImage from '../images/airpods.png';
+import bottleImage from '../images/bottle.png';
+import jacketImage from '../images/jacket.png';
+import mugImage from '../images/mug.png';
+import type { OnchainStoreContextType } from '../types';
 
 const emptyContext = {} as OnchainStoreContextType;
 

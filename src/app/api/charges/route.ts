@@ -1,6 +1,6 @@
+import { NextResponse } from 'next/server';
 import { COINBASE_COMMERCE_API_KEY } from 'src/config';
 import { COMMERCE_API_URL } from 'src/links';
-import { NextResponse } from 'next/server';
 import type { ChargeDetails } from 'src/types';
 
 export async function POST(request: Request) {

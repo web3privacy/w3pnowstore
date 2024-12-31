@@ -1,5 +1,4 @@
 import { useCallback, useMemo } from 'react';
-import { useOnchainStoreContext } from './OnchainStoreProvider';
 // import useCreateCharge from 'src/hooks/useCreateCharge';
 // import {
 //   Checkout,
@@ -7,8 +6,9 @@ import { useOnchainStoreContext } from './OnchainStoreProvider';
 //   LifecycleStatus,
 // } from '@coinbase/onchainkit/checkout';
 import type { OnchainStoreCartReact } from 'src/types';
-import OnchainStoreModal from './OnchainStoreModal';
 import { MockCheckoutButton } from './MockCheckoutButton';
+import OnchainStoreModal from './OnchainStoreModal';
+import { useOnchainStoreContext } from './OnchainStoreProvider';
 
 export default function OnchainStoreCart({
   setShowModal,

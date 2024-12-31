@@ -1,5 +1,5 @@
-import type { Product } from 'src/types';
 import Image from 'next/image';
+import type { Product } from 'src/types';
 import QuantityInput from './QuantityInput';
 
 export default function OnchainStoreItem({ id, name, price, image }: Product) {
