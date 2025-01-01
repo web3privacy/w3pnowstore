@@ -1,0 +1,92 @@
+[
+    {
+        "id": "product1",
+        "name": "Privacy Hoooooodie",
+        "price": 10,
+        "image": "/images/hoodie1.jpg"
+    },
+    {
+        "id": "product2",
+        "name": "Privacy Hoooooodie",
+        "price": 20,
+        "image": "/images/hoodie2.jpg"
+    },
+    {
+        "id": "product3",
+        "name": "Privacy Hoooooodie",
+        "price": 20,
+        "image": "/images/hoodie3.jpg"
+    },
+    {
+        "id": "product4",
+        "name": "Privacy Hoooooodie",
+        "price": 25,
+        "image": "/images/hoodie4.jpg"
+    },
+    {
+        "id": "product5",
+        "name": "Privacy Hoooooodie",
+        "price": 20,
+        "image": "/images/hoodie5.jpg"
+    },
+    {
+        "id": "product6",
+        "name": "Privacy Hoooooodie",
+        "price": 20,
+        "image": "/images/hoodie6.jpg"
+    },
+    {
+        "id": "product7",
+        "name": "Privacy Supporter Necklace",
+        "price": 20,
+        "image": "/images/pin1.jpg"
+    },
+    {
+        "id": "product8",
+        "name": "Privacy Supporter Pin",
+        "price": 20,
+        "image": "/images/pin2.jpg"
+    },
+    {
+        "id": "product9",
+        "name": "Privacy Supporter Necklace",
+        "price": 20,
+        "image": "/images/pin3.jpg"
+    },
+    {
+        "id": "product10",
+        "name": "Privacy Supporter T-Shirt",
+        "price": 20,
+        "image": "/images/shirt1.jpg"
+    },
+    {
+        "id": "product11",
+        "name": "Privacy Supporter T-Shirt",
+        "price": 20,
+        "image": "/images/shirt2.jpg"
+    },
+    {
+        "id": "product12",
+        "name": "Privacy Supporter Polo",
+        "price": 20,
+        "image": "/images/tshirt1.jpg"
+    },
+    {
+        "id": "product13",
+        "name": "Privacy Supporter T-Shirt",
+        "price": 20,
+        "image": "/images/tshirt2.jpg"
+    },
+    {
+        "id": "product14",
+        "name": "Privacy Supporter T-Shirt",
+        "price": 20,
+        "image": "/images/tshirt3.jpg"
+    },
+    {
+        "id": "product15",
+        "name": "Privacy Supporter T-Shirt",
+        "price": 20,
+        "image": "/images/tshirt4.jpg"
+    }
+]
