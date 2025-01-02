@@ -3,7 +3,6 @@ import type { Product } from 'src/types';
 import QuantityInput from './QuantityInput';
 
 export default function OnchainStoreItem({ id, name, price, image }: Product) {
-  console.log('Image path:', image); 
 
   return (
     <div className="store-item mx-auto flex w-full flex-col p-4 sm:mx-0 lg:p-6">

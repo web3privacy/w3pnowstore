@@ -14,7 +14,7 @@ export default function OnchainStore() {
       <div className="relative flex h-full max-h-screen max-w-full flex-col font-sansMono">
         <Navbar />
         <main className="mx-auto flex max-w-5xl grow flex-col pt-[10rem] pb-10">
-          <div className="flex flex-wrap grow pb-10 md:flex-row">
+          <div className="flex flex-wrap grow pb-10 md:flex-row md:flex-nowrap">
             <OnchainStoreSummary />
             <OnchainStoreItems />
           </div>
