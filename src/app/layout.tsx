@@ -15,11 +15,11 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Onchain Commerce Template",
-  description: "Built with OnchainKit",
+  title: "Web3Privacy Now Merch",
+  description: "Merch for privacy supporters, Built with OnchainKit",
   openGraph: {
-    title: "Onchain Commerce Template",
-    description: "Built with OnchainKit",
+    title: "Web3Privacy Now Merch",
+    description: "Merch for privacy supporters, Built with OnchainKit",
     images: [`${NEXT_PUBLIC_URL}/vibes/vibes-19.png`],
   },
 };

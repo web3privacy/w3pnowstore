@@ -3,7 +3,7 @@ import { ExternalLinkSvg } from 'src/svg/ExternalLinkSvg';
 
 export default function OnchainStoreSummary() {
   return (
-    <div className="flex flex-col justify-start border-gray-200 border-b p-4 py-8 pb-22 md:w-1/3 md:border-r md:border-b-0 md:py-4 lg:border-r lg:p-6 lg:pb-22">
+    <div className="flex flex-col justify-start border-gray-200 border-b p-4 py-8 pb-22 lg:w-1/3 md:border-r md:border-b-0 md:py-4 lg:border-r lg:p-6 lg:pb-22">
       <div className="space-y-4 text-left">
         <h2
           className="font-bold text-3xl leading-tight"
